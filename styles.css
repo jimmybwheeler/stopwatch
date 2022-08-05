@@ -1,8 +1,15 @@
 html{
+    background-color: gray;
     border: solid red 2px;
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
 }
 
 .buttons{

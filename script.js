@@ -4,7 +4,11 @@ const resetBtn = document.querySelector(".reset");
 const time = document.querySelector(".timer");
 
 function startCounter(){
-    console.log("start");
+    let sec = 00;
+    let min = 00;
+    let hour = 00;
+    sec++;
+    time.textContent = sec;
 }
 
 function stopCounter(){
@@ -16,6 +20,8 @@ function resetCounter(){
 }
 
 // event listeners
-startBtn.addEventListener("click", startCounter);
+startBtn.addEventListener("click", () => {
+    setInterval(startCounter, 1000);
+});
 stopBtn.addEventListener("click", stopCounter);
 resetBtn.addEventListener("click", resetCounter);
